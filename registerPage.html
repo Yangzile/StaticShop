@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>程序小象-注册</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script type="text/javascript" src="./js/register.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="register_nav">
+            <div class="nav_left">
+                <img src="./img/loginPage/logoLogin.jpg">
+                <span>程序小象</span>
+            </div>
+        </div>
+    </header>
+    <div class="register_main">
+        <div class="main_tag">
+            <div class="tag">
+                <div>
+                    <i></i>
+                    <a href="login.html">登录</a>
+                    <span>></span>
+                    <a class="reg" href="">注册hahah</a>
+                </div>
+            </div>
+        </div>
+        <div class="main_form">
+            <form>
+                <p id="msg"></p>
+                <div>
+                    <label><span>用户名:</span></label>
+                    <input type="text" id="username" name="username" onfocus="border(id)"
+                        onblur="isUsername(this.value,id)" placeholder="请输入用户名（由字母和数字组成）" maxlength="13">
+                </div>
+                <div>
+                    <label><span>昵称:</span></label>
+                    <input type="text" id="nickname" name="nickname" onfocus="border(id)"
+                        onblur="isNickname(this.value,id)" placeholder="请输入昵称（由中文或英文组成）" maxlength="10">
+                </div>
+                <div>
+                    <label><span>密码:</span></label>
+                    <input type="password" id="userpwd" name="userpwd" onfocus="border(id)"
+                        onblur="isUserpwd(this.value,id)" placeholder="请输入密码（不少于6位）" maxlength="16">
+                </div>
+                <div>
+                    <label><span>确认密码:</span></label>
+                    <input type="password" id="con_userpwd" name="userpwd_confirm" onfocus="border(id)"
+                        onblur="isConfirmpwd(this.value,id)" placeholder="请确认密码" maxlength="16">
+                </div>
+                <div>
+                    <label><span>验证码:</span></label>
+                    <input type="text" id="verifycode" name="verifyCode" onfocus="border(id)"
+                        onblur="isVerify(this.value,id)">
+                    <input type="button" id="checkcode" onclick="createcode()">
+                </div>
+                <button onclick="isRegister()">注册</button>
+                <div class="reg_success"><span id="success">注册成功！</span></div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="footer_left">
+                <p>程序小象根据IT方向的线上学习特点，研发人机互动教学系统， 打造领先的学习模式。平台签约了十名大牛联合创办，
+                    每个合伙人再召集几名身边的技术大咖，根据程序员的岗位需求研发精品课程，并将一门学科中所需要的全部学习资料汇总在一起，
+                    且实时更新。选中一门课程即拥有全部的精品学习资源，不需要再找其它资源补充， 按计划学习结束后即可直接从事对应的开发工作。</p>
+            </div>
+            <div class="footer_right">
+                <div>
+                    <h6>关于我们</h6>
+                    <ul>
+                        <li><a href="">了解我们</a></li>
+                        <li><a href="">企业文化</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>帮助中心</h6>
+                    <ul>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">问答帮助</a></li>
+                        <li><a href="">学员反馈</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>新手指南</h6>
+                    <ul>
+                        <li><a href="">挑选课程</a></li>
+                        <li><a href="">购买课程</a></li>
+                        <li><a href="">学习课程</a></li>
+                        <li><a href="">配套资源</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="power"><a href="">©华广17计科阿海</a></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>我的购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/shop.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/comInfo.js"></script>
+    <script type="text/javascript" src="./js/shop.js"></script>
+
+</head>
+
+<body>
+    <div class="home_header">
+        <div class="head-main">
+            <div class="nav_left">
+                <img src="./img/loginPage/logoLogin.jpg">
+                <span>程序小象</span>
+                <ul>
+                    <li><a href="">就业班</a></li>
+                    <li><a href="">在职提升课</a></li>
+                    <li><a href="">全部课程</a></li>
+                    <li><a href="">咨讯</a></li>
+                    <li><a href="">手记</a></li>
+                </ul>
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <li><a href="">下载APP</a></li>
+                    <li id="shopping"><a href="">购物车</a></li>
+                    <li id="user">
+                        <img src="./img/loginPage/user.jpg">
+                    </li>
+                </ul>
+            </div>
+            <div id="userTab">
+                <div class="userCont">
+                    <div class="userinfo">
+                        <div class="userfile">
+                            <img src="./img/loginPage/user.jpg">
+                            <div>
+                                <h5 id="user-name"></h5>
+                                <span>经验<b>5540</b> </span>
+                                <span>积分<b>0</b></span>
+                            </div>
+                        </div>
+                        <div class="userfunc">
+                            <a href="">我的课程</a>
+                            <a href="">订单中心</a>
+                            <a href="">积分商城</a>
+                            <a href="">个人设置</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <a href="./login.html">退出登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-main">
+        <div class="main-top">
+        </div>
+        <div class="main-center">
+            <h4>我的购物车</h4>
+            <div class="detail empty">
+                <div>购物车内空空如也</div>
+            </div>
+            <div class="detail have">
+                <div class="detail-tit">
+                    <div>课程</div>
+                    <div>金额</div>
+                    <div>操作</div>
+                </div>
+                <div id="det">
+                    <div class="detail-main">
+                        <div class="commodity-info">
+                            <img src="./img/homePage/newlesson6.jpg">
+                            <span>【实战课程】Spark2.x+协同过滤算法，开发企业级个性化推荐系统</span>
+                        </div>
+                        <div class="commodity-price">
+                            <span>￥ <b>388.00</b></span>
+                        </div>
+                        <div class="close"><img src="./img/icon/close.jpg"></div>
+                    </div>
+                    <div class="detail-main">
+                        <div class="commodity-info">
+                            <img src="./img/homePage/newlesson3.png">
+                            <span>【实战课程】Kafka多维度系统精讲，从入门到熟练掌握</span>
+                        </div>
+                        <div class="commodity-price">
+                            <span>￥ <b>298.00</b></span>
+                        </div>
+                        <div class="close"><img src="./img/icon/close.jpg"></div>
+                    </div>
+                </div>
+                <div class="account">
+                    <span>总计金额： <b>￥ <b id="totalAccount">123</b></b></span>
+                    <button>去结算</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <div class="footer_left">
+                <p>程序小象根据IT方向的线上学习特点，研发人机互动教学系统， 打造领先的学习模式。平台签约了十名大牛联合创办，
+                    每个合伙人再召集几名身边的技术大咖，根据程序员的岗位需求研发精品课程，并将一门学科中所需要的全部学习资料汇总在一起，
+                    且实时更新。选中一门课程即拥有全部的精品学习资源，不需要再找其它资源补充， 按计划学习结束后即可直接从事对应的开发工作。</p>
+            </div>
+            <div class="footer_right">
+                <div>
+                    <h6>关于我们</h6>
+                    <ul>
+                        <li><a href="">了解我们</a></li>
+                        <li><a href="">企业文化</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>帮助中心</h6>
+                    <ul>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">问答帮助</a></li>
+                        <li><a href="">学员反馈</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>新手指南</h6>
+                    <ul>
+                        <li><a href="">挑选课程</a></li>
+                        <li><a href="">购买课程</a></li>
+                        <li><a href="">学习课程</a></li>
+                        <li><a href="">配套资源</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="power"><a href="">©华广17计科阿海</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>

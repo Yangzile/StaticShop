@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>程序小象-登录</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="login_nav">
+            <div class="nav_left">
+                <img src="./img/loginPage/logoLogin.jpg">
+                <span>程序小象</span>
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">小象品牌</a></li>
+                    <li><a href="">小象网校</a></li>
+                </ul>
+            </div>
+            <div class="nav_right">
+                <a href="">
+                    <img src="./img/icon/icon_download.png">
+                    <span>小象app下载</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="login_banner">
+        <div class="center_part">
+            <div class="login_part">
+                <div class="login_text">
+                    <span>用户登录</span>
+                    <span><a href="homePage.html">游客登录</a></span>
+                </div>
+                <div class="tag">
+                    <p id="msg"></p>
+                </div>
+                <form class="login_form">
+                    <div>
+                        <img src="./img/icon/icon_user.png">
+                        <input type="text" id="username" onfocus="newborder(id)" onblur="border(id)" name="username"
+                            placeholder="用户名">
+                    </div>
+                    <div>
+                        <img src="./img/icon/icon_pwd.png">
+                        <input type="password" id="userpwd" onfocus="newborder(id)" onblur="border(id)" name="userpwd"
+                            placeholder="请输入密码">
+                    </div>
+                </form>
+                <div class="register_text">
+                    <span><a href="registerPage.html">立即注册→</a></span>
+                    <span><a href="">忘记密码？</a></span>
+                </div>
+                <button id="login_btn" class="login_btn" onclick="login()">登录</button>
+                <div class="thirdparty">
+                    <div class="thirdparty_tips">
+                        <div class="line"></div>
+                        <span>第三方账号登录</span>
+                    </div>
+                    <div class="thirdparty_btns">
+                        <a href="">
+                            <img src="./img/icon/icon_wb.png">
+                        </a>
+                        <a href="">
+                            <img src="./img/icon/icon_wx.png">
+                        </a>
+                        <a href="">
+                            <img src="./img/icon/icon_qq.png">
+                        </a>
+                        <a href="">
+                            <img src="./img/icon/icon_du.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="appDownload">
+                    <a href="">
+                        <img src="./img/loginPage/loginApp.png">
+                        <span>APP下载</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <div class="footer_left">
+                <p>程序小象根据IT方向的线上学习特点，研发人机互动教学系统， 打造领先的学习模式。平台签约了十名大牛联合创办，
+                    每个合伙人再召集几名身边的技术大咖，根据程序员的岗位需求研发精品课程，并将一门学科中所需要的全部学习资料汇总在一起，
+                    且实时更新。选中一门课程即拥有全部的精品学习资源，不需要再找其它资源补充， 按计划学习结束后即可直接从事对应的开发工作。</p>
+            </div>
+            <div class="footer_right">
+                <div>
+                    <h6>关于我们</h6>
+                    <ul>
+                        <li><a href="">了解我们</a></li>
+                        <li><a href="">企业文化</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>帮助中心</h6>
+                    <ul>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">问答帮助</a></li>
+                        <li><a href="">学员反馈</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>新手指南</h6>
+                    <ul>
+                        <li><a href="">挑选课程</a></li>
+                        <li><a href="">购买课程</a></li>
+                        <li><a href="">学习课程</a></li>
+                        <li><a href="">配套资源</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="power"><a href="">©华广17计科阿海</a></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
